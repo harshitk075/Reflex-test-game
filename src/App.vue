@@ -1,5 +1,5 @@
 <template>
-  <h1 id='st'>Reaction Timer Game</h1>
+  <h1 id='st'>Reflex Test Game</h1>
   <button @click="isplaying" :disabled='gamestarted'>Play</button>
   <block v-if="gamestarted" :delay='delay' @end='results' />
   <div>
