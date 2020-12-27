@@ -1,6 +1,6 @@
 <template>
-  <h2>Your Reaction Time is {{score}}ms</h2>
-  <h2>{{level}}</h2>
+  <h2 class='out'>Your Reaction Time is: <span id='sp'>{{score}} </span> ms</h2>
+  <h1 class='out'>{{level}}</h1>
 </template>
 
 <script>
@@ -27,5 +27,13 @@ export default {
 </script>
 
 <style>
-
+.out{
+    font-size: 2.3em;
+    color: slategrey;
+    font-weight: bold;
+}
+#sp{
+    color: rgb(33, 21, 202);;
+    text-decoration: underline;
+}
 </style>

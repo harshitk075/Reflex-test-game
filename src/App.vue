@@ -1,5 +1,5 @@
 <template>
-  <h1>Reaction Timer Game</h1>
+  <h1 id='st'>Reaction Timer Game</h1>
   <button @click="isplaying" :disabled='gamestarted'>Play</button>
   <block v-if="gamestarted" :delay='delay' @end='results' />
   <div>
@@ -44,7 +44,27 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+#st{
+  color: rgb(33, 21, 202);
+  font-size: 5em;
+}
+
+button{
+  background: rgb(54, 226, 39);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button[disabled]{
+  opacity: 0.2;
+  cursor: not-allowed;
 }
 </style>
